@@ -1,0 +1,87 @@
+/* Typography & Editorial Text Hierarchy */
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw + 1rem, 3.25rem);
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2vw + 0.5rem, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 1.2vw + 0.3rem, 1.35rem);
+}
+
+p {
+  font-size: clamp(1rem, 0.4vw + 0.9rem, 1.15rem);
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Microcopy Badges & Tags */
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: var(--accent-light);
+  color: var(--accent-color);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-accent);
+}
+
+.badge-tag-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.editorial-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw + 0.5rem, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-highlight {
+  position: relative;
+  display: inline-block;
+  color: var(--text-primary);
+}
+
+.text-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0.15em;
+  left: 0;
+  width: 100%;
+  height: 0.3em;
+  background-color: var(--accent-light);
+  z-index: -1;
+  border-radius: 4px;
+}

@@ -1,0 +1,51 @@
+/* CSS Variables & Design Tokens */
+:root {
+  /* Color Palette */
+  --bg-primary: #FAF9F6;           /* Soft warm cream neutral background */
+  --bg-card: #FFFFFF;              /* Pure white cards */
+  --bg-card-subtle: #F4F3ED;       /* Soft warm grey-cream secondary card */
+  --bg-dark: #141416;              /* Dark carbon section background */
+  --bg-dark-card: #1E1E22;         /* Dark card background */
+  
+  --text-primary: #121214;         /* Carbon black headings & text */
+  --text-secondary: #52525B;       /* Muted charcoal body text */
+  --text-tertiary: #8A8A93;        /* Soft subtle text */
+  --text-inverse: #FFFFFF;         /* White text on dark */
+  
+  /* Signature Accent Color */
+  --accent-color: #FF3B60;         /* Electric Coral / Magenta Pink */
+  --accent-hover: #E02B4E;         /* Darker accent hover */
+  --accent-light: rgba(255, 59, 96, 0.08); /* Soft tinted accent badge */
+  --accent-glow: rgba(255, 59, 96, 0.25);  /* Subtle glowing accent */
+
+  --border-light: rgba(18, 18, 20, 0.08);
+  --border-medium: rgba(18, 18, 20, 0.15);
+  --border-accent: rgba(255, 59, 96, 0.3);
+
+  /* Typography Fonts - Premium bold geometric pairing */
+  --font-display: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Shadows & Glassmorphism */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.12);
+  --shadow-accent: 0 12px 32px rgba(255, 59, 96, 0.2);
+  
+  --glass-bg: rgba(250, 249, 246, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-blur: blur(16px);
+
+  /* Layout & Radii */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  --max-width: 1280px;
+  --header-height: 80px;
+}
