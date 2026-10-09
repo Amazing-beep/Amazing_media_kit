@@ -10,10 +10,10 @@ export const creatorConfig = {
   heroSubheadline: "Content creator, video editor & creator educator helping aspiring creators create better videos, tell better stories and stand out online.",
   
   socialStats: {
-    tiktok: { count: "12.4K", raw: 12400, label: "TikTok Followers", handle: "@techgirlamazing", url: "https://www.tiktok.com/@techgirlamazing?is_from_webapp=1&sender_device=pc" },
+    tiktok: { count: "13.4K", raw: 13400, label: "TikTok Followers", handle: "@techgirlamazing", url: "https://www.tiktok.com/@techgirlamazing?is_from_webapp=1&sender_device=pc" },
     instagram: { count: "2.7K", raw: 2700, label: "Instagram Followers", handle: "@amazing.mkhonta", url: "https://www.instagram.com/amazing.mkhonta/" },
     facebook: { count: "6K", raw: 6000, label: "Facebook Followers", handle: "Amazing Mkhonta", url: "#" },
-    combined: { count: "21K+", raw: 21100, label: "Combined Community" }
+    combined: { count: "22K+", raw: 22100, label: "Combined Community" }
   },
 
   contact: {
