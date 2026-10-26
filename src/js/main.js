@@ -6,6 +6,7 @@ import { initContactModal } from './contact-modal.js';
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   renderSocialStats();
+  renderPerformanceMetrics();
   renderDemographics();
   renderBrandFits();
   initAnimations();
@@ -132,6 +133,7 @@ function renderDemographics() {
       <div class="location-chip ${loc.isPrimary ? 'primary-location' : ''}">
         <span>${loc.flag}</span>
         <span>${loc.country}</span>
+        ${loc.percentage != null ? `<span style="font-size:0.85rem; font-weight:700; opacity:0.85; margin-left:0.25rem;">${loc.percentage}%</span>` : ''}
       </div>
     `).join('');
   }
@@ -150,6 +152,36 @@ function renderDemographics() {
         </div>
       </div>
     `).join('');
+  }
+}
+
+/**
+ * Dynamically renders verified performance metrics from creatorConfig.performanceMetrics
+ */
+function renderPerformanceMetrics() {
+  const perf = creatorConfig.performanceMetrics;
+  if (!perf) return;
+
+  const container = document.getElementById('performance-stats-grid');
+  if (!container) return;
+
+  const metrics = [perf.impressions, perf.engagementRate, perf.monthlyReach, perf.profileViews];
+  const cards = container.querySelectorAll('.stat-card');
+  if (cards.length >= 4) {
+    cards.forEach((card, i) => {
+      const data = metrics[i];
+      if (!data) return;
+
+      const numEl = card.querySelector('.stat-number');
+      if (numEl) {
+        numEl.setAttribute('data-target', data.counterTarget);
+        numEl.setAttribute('data-suffix', data.counterSuffix);
+      }
+      const labelEl = card.querySelector('.stat-label');
+      if (labelEl) labelEl.textContent = data.label;
+      const subEl = card.querySelector('p');
+      if (subEl) subEl.textContent = data.subtext;
+    });
   }
 }
 

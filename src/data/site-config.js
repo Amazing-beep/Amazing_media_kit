@@ -144,6 +144,43 @@ export const creatorConfig = {
     }
   ],
 
+  // --- VERIFIED TIKTOK PERFORMANCE METRICS (28-DAY ANALYTICS) ---
+  performanceMetrics: {
+    period: "28 Days",
+    impressions: {
+      count: "277.6K",
+      raw: 277600,
+      counterTarget: 277.6,
+      counterSuffix: "K",
+      label: "Monthly Post Views",
+      subtext: "28-Day Video Impressions"
+    },
+    engagementRate: {
+      count: "3.4%",
+      raw: 3.36,
+      counterTarget: 3.4,
+      counterSuffix: "%",
+      label: "Engagement Rate",
+      subtext: "High-Retention Interactions"
+    },
+    monthlyReach: {
+      count: "31.3K",
+      raw: 31300,
+      counterTarget: 31.3,
+      counterSuffix: "K",
+      label: "Unique Viewers",
+      subtext: "2.3× Follower Reach"
+    },
+    profileViews: {
+      count: "11.1K",
+      raw: 11100,
+      counterTarget: 11.1,
+      counterSuffix: "K",
+      label: "Profile Views",
+      subtext: "High Profile Conversion"
+    }
+  },
+
   // --- AUDIENCE DEMOGRAPHICS ---
   // Source: Verified TikTok analytics breakdown
   demographics: {
@@ -161,16 +198,15 @@ export const creatorConfig = {
       { range: "55+", percentage: 1.6, isPrimary: false }
     ],
     locations: [
-      { country: "South Africa", flag: "🇿🇦", isPrimary: true },
-      { country: "Eswatini", flag: "🇸🇿", isPrimary: true },
-      { country: "Nigeria", flag: "🇳🇬", isPrimary: false },
-      { country: "United States", flag: "🇺🇸", isPrimary: false },
-      { country: "Zimbabwe", flag: "🇿🇼", isPrimary: false },
-      { country: "Kenya", flag: "🇰🇪", isPrimary: false },
-      { country: "Botswana", flag: "🇧🇼", isPrimary: false },
-      { country: "Zambia", flag: "🇿🇲", isPrimary: false },
-      { country: "Ghana", flag: "🇬🇭", isPrimary: false },
-      { country: "Liberia", flag: "🇱🇷", isPrimary: false }
+      { country: "South Africa", flag: "🇿🇦", percentage: 49.7, isPrimary: true },
+      { country: "Kenya", flag: "🇰🇪", percentage: 11.7, isPrimary: true },
+      { country: "United States", flag: "🇺🇸", percentage: 8.9, isPrimary: true },
+      { country: "Zimbabwe", flag: "🇿🇼", percentage: 6.1, isPrimary: false },
+      { country: "Botswana", flag: "🇧🇼", percentage: 3.3, isPrimary: false },
+      { country: "Eswatini", flag: "🇸🇿", percentage: null, isPrimary: true },
+      { country: "Nigeria", flag: "🇳🇬", percentage: null, isPrimary: false },
+      { country: "United Kingdom", flag: "🇬🇧", percentage: null, isPrimary: false },
+      { country: "Ghana", flag: "🇬🇭", percentage: null, isPrimary: false }
     ]
   },
 
@@ -197,12 +233,18 @@ export const creatorConfig = {
       monthlyReach: null      // e.g., "45K+"
     },
 
-    // TikTok Analytics (Obtain from: TikTok Studio > Analytics)
+    // TikTok Analytics (Verified from TikTok Studio Sep 27 - Oct 24)
     tiktok: {
       status: "verified",
-      engagementRate: null,   // e.g., "6.2%" (calculate from: Total Likes + Comments + Shares / Views)
-      averageVideoViews: null,// e.g., "25K+"
-      topVideoViews: null     // e.g., "100K+"
+      period: "Sep 27 - Oct 24 (28 Days)",
+      postViews: "277.6K",
+      profileViews: "11.1K",
+      uniqueViewers: "31.3K",
+      newViewers: "20.5K",
+      likes: "8.9K",
+      comments: 138,
+      shares: 278,
+      engagementRate: "3.4%"
     }
   },
 
